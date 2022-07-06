@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void decBin(int n){
+	printf("decBin(%d)\n",n);getch();
+	if(n==0){
+	  printf("Caso base\n");
+     return;
+ }
+ decBin(n/2);
+ printf("%d",n%2); getch();
+}
+int main (){
+	int numero;
+	printf("Numero: ");
+	scanf("%d", &numero);
+	decBin(numero);
+	return 0;
+}  
