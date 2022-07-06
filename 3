@@ -1,0 +1,12 @@
+void remove_Par(tlista *l){
+	tno *aux;
+	tdado retorno;
+	while(l->head != NULL){
+		if(l->head->dado % 2 == 0){
+			aux->dado = l->head->dado;
+			removeHead(l);
+		}
+		l->head = l->head->prox;
+	}
+	printList(l);
+  }
